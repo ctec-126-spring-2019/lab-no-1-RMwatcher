@@ -5,7 +5,8 @@ function reverseString(str) {
 }
 
 function listSkills(){
-    let skills = ['Web Development','Gardening','Drumming','Volunteering';
+    // add a ']' at the end of line 9 after 'Volunteering'.
+    let skills = ['Web Development','Gardening','Drumming','Volunteering'];
     let output = "<h2>Bruce's Skills<h2>";
     output += '<ul>';
     for (let i = 0; i < skills.length; i++) {
@@ -16,15 +17,20 @@ function listSkills(){
 }
 
 function getStarted(){
-    let firstName  'Bruce'
+    // add a '=' sign in bewteen firstName and 'Bruce' and ';' after 'Bruce'.
+    let firstName = 'Bruce';
     let lastName = 'Elgort';
-    let collegeName = 'Clark College'
+    // add a ';' sign at the end of the string after 'Clark College'
+    let collegeName = 'Clark College';
     let city = 'Vancouver, Washington';
     let gpa = 3.2;
-    let output = `${firstName} {lastName} is currently attending ${collegeName}, located in {city} and has a grade point average of {gpa}`;
+    // add '$' in front of {lastName}, {city}, {gpa}.
+    let output = `${firstName} ${lastName} is currently attending ${collegeName}, located in ${city} and has a grade point average of ${gpa}`;
 
-    document.getElementById('place1').innerHTML = '<p>' + output + '</p>";
-    document.getElementById('place2').innerHTML = '<p>' + reverseString(output) + '</p>';
+    // change the quotation marks surrounding </p> to single quotes '' instead of two different ones
+    document.getElementById('place1').innerHTML = '<p>' + output + '</p>';
+    // add a '+' in bewteen reverseString and output 
+    document.getElementById('place2').innerHTML = '<p>' + reverseString + (output) + '</p>';
 }
 
 window.onload = function(){
